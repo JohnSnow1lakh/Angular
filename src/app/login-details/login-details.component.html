@@ -1,0 +1,19 @@
+<div class="login-box">
+    <h2>Login</h2>
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit(username,pass)">
+      <label for="username">Username:</label>
+      <input #username type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input #pass type="password" id="password" name="password" required>
+
+      <a class="button"
+     routerLink="/user-dashboard">
+
+     <button type="submit">Login</button>
+  </a>
+     
+    </form>
+    <a routerLink="/register-page">Not a user?Register here</a>
+</div>
+<router-outlet *ngIf="authenticated"></router-outlet>

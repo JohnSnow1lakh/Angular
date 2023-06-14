@@ -1,0 +1,22 @@
+<h1>Admin Dashboard</h1>
+<div class="login-box">
+    
+    <input 
+            type="text" 
+            class="form-control">
+   
+    
+   <br>
+
+        <input 
+            formControlName="file"
+            id="file" 
+            type="file" 
+            (change)="getFile($event)">
+  
+        
+    <button class="btn btn-primary" type="submit" (click)="submit()">Submit</button>
+    <a routerLink="/user-dashboard" >user-dashboard</a>
+</div>
+
+<router-outlet></router-outlet>

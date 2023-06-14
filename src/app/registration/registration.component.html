@@ -1,0 +1,25 @@
+<div class="login-box">
+<form (ngSubmit)="onSubmit(username,email,pass)">
+    <label for="username">Username:</label>
+    <input #username type="text" id="username" name="username" required>
+    <br>
+    <label for="email">Email:</label>
+      <input #email type="email" id="email" name="email" required>
+
+    <br>
+    <label for="password">Password:</label>
+    <input #pass type="password" id="password" name="password" required>
+
+    <br>
+
+    <a class="button"
+    routerLink="/login-page">
+
+    <button type="submit">Register</button>
+ </a>
+
+
+    
+  </form>
+  <a routerLink="/login-page" >Login in</a>
+</div>
